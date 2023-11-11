@@ -2,7 +2,7 @@ import { Controller } from '@nestjs/common';
 import { EventPattern } from '@nestjs/microservices';
 import {ProductService} from './product.service';
 
-@Controller('product')
+@Controller('products')
 export class ProductController {
     constructor(private productService: ProductService) {
 
@@ -28,7 +28,7 @@ export class ProductController {
     @EventPattern('product_updated')
     async update(product) {
         console.log("product_updated", product);
-        this.productService.update(product.id, product)
+        this.productService.update(product.id, product);
     }
     @EventPattern('product_deleted')
     async delete(id) {
