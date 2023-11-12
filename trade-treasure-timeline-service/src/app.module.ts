@@ -7,8 +7,8 @@ import { LikeController } from './like/like.controller';
 import { LikeModule } from './like/like.module';
 
 @Module({
-  imports: [ProductModule, LikeModule],
-  controllers: [AppController, LikeController],
+  imports: [ProductModule],
+  controllers: [AppController],
   providers: [AppService],
 })
 export class AppModule {}
