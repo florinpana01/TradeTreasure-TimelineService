@@ -3,7 +3,7 @@ name : Timeline Service
 on: 
   push:
     branches:   
-    - main
+    - 'main'
 
 jobs:
   tests:
@@ -17,4 +17,3 @@ jobs:
           node-version: '16'
       - name: Install
         run: npm i
-        
