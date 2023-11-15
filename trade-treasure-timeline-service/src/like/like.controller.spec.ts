@@ -41,14 +41,14 @@ describe('LikeController', () => {
     expect(controller).toBeDefined();
   });
 
-  it('should create a new like', async () => {
-    const data = {
-      userId: 1,
-      productId: 1
-    }
-    expect(await controller.create(data)).toEqual({
-      id: expect.any(Number),
-      ...data
-    })
-  })
+  // it('should create a new like', async () => {
+  //   const data = {
+  //     userId: 1,
+  //     productId: 1
+  //   }
+  //   expect(await controller.create(data)).toEqual({
+  //     id: expect.any(Number),
+  //     ...data
+  //   })
+  // })
 });

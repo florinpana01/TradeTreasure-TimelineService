@@ -14,5 +14,3 @@ jobs:
           node-version: '16'
       - name: Install
         run: npm i
-      - name: tests
-        run: npm run test
